@@ -11,7 +11,7 @@ import {setChallengeModalVisibility, setGameModalVisibility} from './actions';
 // https://developers.mattermost.com/extend/plugins/webapp/reference/#registerRootComponent
 
 export default class MattermostChessPlugin {
-  initialize(registry, store) {
+  initialize(registry) {
     registry.registerReducer(Reducer);
 
     registry.registerPopoverUserActionsComponent(ChallengeUser);
